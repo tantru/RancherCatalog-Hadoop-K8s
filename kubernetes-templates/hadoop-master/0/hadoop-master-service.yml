@@ -7,8 +7,8 @@ metadata:
 spec:
   ports:
     - port: 50070
-      name: hadoop-master
+      name: hadoop-masternode
     - port: 8088
-      name: hadoop-master
+      name: hadoop-resourcemanager
   selector:
     app: hadoop-master
