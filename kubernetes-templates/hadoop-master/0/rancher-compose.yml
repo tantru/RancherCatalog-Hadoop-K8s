@@ -1,0 +1,7 @@
+.catalog:
+  name: hadoop-master
+  version: 0.1
+  description: |
+    (Experimental) hadoop-master.
+  minimum_rancher_version: v0.59.0
+  uuid: hadoop-master-0

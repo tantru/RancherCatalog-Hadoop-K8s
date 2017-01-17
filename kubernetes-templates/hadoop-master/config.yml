@@ -1,0 +1,5 @@
+name: hadoop-master
+description: |
+  (Experimental) hadoop-master
+version: 0.1
+category: hadoop-master

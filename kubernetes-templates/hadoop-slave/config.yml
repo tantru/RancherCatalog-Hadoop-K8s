@@ -1,0 +1,5 @@
+name: hadoop-slave
+description: |
+  (Experimental) hadoop-slave
+version: 0.1
+category: hadoop-slave
