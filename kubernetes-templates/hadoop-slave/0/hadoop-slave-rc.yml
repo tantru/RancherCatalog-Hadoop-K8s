@@ -1,10 +1,12 @@
+#### Hadoop Slave  replication controller
+
 apiVersion: v1
 kind: ReplicationController
 metadata:
   labels:
     app: hadoop-slave
   name: hadoop-slave
-  namespace: hadoop-slave
+  namespace: default
 spec:
   selector:
     app: hadoop-slave
@@ -14,11 +16,6 @@ spec:
         app: hadoop-slave
     spec:
       containers:
-      - image: kiwenlau/hadoop:1.0
+      - image: tantru/hadoop-slave:1.0
         imagePullPolicy: Always
         name: hadoop-slave
-        securityContext:
-          privileged: true
-        ports:
-        - containerPort: 50070
-        - containerPort: 8088
