@@ -1,10 +1,12 @@
+#### Hadoop Master  replication controller
+
 apiVersion: v1
 kind: ReplicationController
 metadata:
   labels:
     app: hadoop-master
   name: hadoop-master
-  namespace: hadoop-master
+  namespace: default
 spec:
   selector:
     app: hadoop-master
@@ -17,8 +19,8 @@ spec:
       - image: kiwenlau/hadoop:1.0
         imagePullPolicy: Always
         name: hadoop-master
-        securityContext:
-          privileged: true
         ports:
         - containerPort: 50070
+          protocol: TCP
         - containerPort: 8088
+          protocol: TCP
