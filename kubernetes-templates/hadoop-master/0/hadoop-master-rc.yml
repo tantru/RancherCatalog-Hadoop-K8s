@@ -24,3 +24,5 @@ spec:
           protocol: TCP
         - containerPort: 8088
           protocol: TCP
+        - containerPort: 9000
+          protocol: TCP
