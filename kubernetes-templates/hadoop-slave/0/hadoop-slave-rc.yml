@@ -19,3 +19,6 @@ spec:
       - image: tantru/hadoop-slave:1.0
         imagePullPolicy: Always
         name: hadoop-slave
+        ports:
+        - containerPort: 22
+
