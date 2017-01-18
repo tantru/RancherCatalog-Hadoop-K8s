@@ -10,5 +10,7 @@ spec:
       name: hadoop-masternode
     - port: 8088
       name: hadoop-resourcemanager
+    - port: 9000
+      name: hadoop-hdfs
   selector:
     app: hadoop-master
