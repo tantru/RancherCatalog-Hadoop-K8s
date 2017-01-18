@@ -16,7 +16,7 @@ spec:
         app: hadoop-master
     spec:
       containers:
-      - image: kiwenlau/hadoop:1.0
+      - image: tantru/hadoop-master:1.0
         imagePullPolicy: Always
         name: hadoop-master
         ports:
