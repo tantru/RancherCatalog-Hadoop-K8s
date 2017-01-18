@@ -6,9 +6,7 @@ metadata:
     app: hadoop-slave
 spec:
   ports:
-    - port: 50070
-      name: hadoop-slave
-    - port: 8088
+    - port: 22
       name: hadoop-slave
   selector:
     app: hadoop-slave
